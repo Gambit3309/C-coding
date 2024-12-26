@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735133611 source:c:\users\ibrahim hamid\onedrive\university\c++\simple calculator\main.cpp
+	<iostream>
+	<conio.h>
+

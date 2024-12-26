@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735143007 source:c:\users\ibrahim hamid\onedrive\university\c++\gpa calculator\main.cpp
+	<iostream>
+	<conio.h>
+

@@ -4,18 +4,32 @@ using namespace std;
 
 int main()
 {
-    int original_num,n1, rem, rev=0;
-    cout<<"Enter a number: ";
-    cin>>original_num;
-    n1=original_num;
-    while (n1!=0)
+    int n1, rem, rev, temp;
+        cout<<"Enter a number"<<endl;
+        cin>>n1;
+    A:
+    rev=0;
+    temp=n1;
+    while(temp!=0)
     {
-        rem=n1%10;
+
+
+        rem=temp%10;
         rev=rev*10+rem;
-        n1=n1/10;
+        temp=temp/10;
     }
-    if(original_num==rev)
-        cout<<"Palindrome";
+        if(n1==rev)
+        cout<<n1<<" is a Palindrome"<<endl;
+        else
+        cout<<n1<<" is not a Palindrome"<<endl;
+        cout<<"Enter another number or enter 0 to exit"<<endl;
+        cin>>n1;
+    if(n1==0)
+    {
+        cout<<"Exiting";
+        return 0;
+    }
     else
-        cout<<"Not a palindrome";
+        goto A;
+
 }
